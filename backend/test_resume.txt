@@ -1,0 +1,6 @@
+﻿Name: Ananya Kumar
+Email: ananya@example.com
+Skills: Python, SQL, Power BI
+Education: B.Tech in Computer Science
+Experience: Data Analyst Intern at ABC Technologies
+Duration: 4 weeks
