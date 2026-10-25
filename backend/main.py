@@ -1,7 +1,6 @@
 
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-
 from pydantic import BaseModel, Field
 from analyzer import analyze_resume
 from extractor import extract_text
@@ -70,14 +69,6 @@ async def extract_document(file: UploadFile = File(...)):
 class ResumeAnalysisRequest(BaseModel):
     resume_text: str = Field(min_length=1, max_length=20000)
 
-
-
-from fastapi import FastAPI, UploadFile, File, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-
-from pydantic import BaseModel, Field
-from analyzer import analyze_resume
-from extractor import extract_text
 
 app = FastAPI(
     title="ResumeIQ API",
