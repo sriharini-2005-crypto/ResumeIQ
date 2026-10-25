@@ -42,7 +42,10 @@ import {
 import "./App.css";
 
 const API_URL =
-  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.PROD
+    ? "https://resumeiq-api-lrdy.onrender.com"
+    : "http://127.0.0.1:8000");
 
 const MAX_FILE_SIZE = 5 * 1024 * 1024;
 
