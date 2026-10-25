@@ -1,6 +1,8 @@
 # Environment variables (DO NOT COMMIT)
 .env
 .env.*
+!.env.example
+!frontend/.env.example
 backend/.env
 frontend/.env
 *.env
